@@ -36,7 +36,7 @@ params <- list(
 )
 
 # Put your URLS into an array and json_encode them
-batched_domains <- list('www.moz.com', 'www.apple.com', 'www.pizza.com')
+batched_domains <- c('www.moz.com', 'www.apple.com', 'www.pizza.com')
 encoded_domains <- toJSON(batched_domains, auto_unbox = TRUE)
 
 # Build the URL
